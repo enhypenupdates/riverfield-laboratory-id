@@ -1,0 +1,637 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@font-face {
+  font-family: "Lekton";
+  src: url("/fonts/Lekton-Bold.ttf");
+}
+@font-face {
+  font-family: "Lekton Regular";
+  src: url("/fonts/Lekton-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --main-font: "Lekton", sans-serif;
+  --font-size: 25px;
+  --top-color:#000000;
+  --bottom-color:#000000;
+  --text-color: #000000;
+  --barcode-color:#000000;
+  --logo-color: #ffffff;
+  --decelis-card: url("/assets/jungwon-front-id.png");
+  --image-width: 300px; /* Specify the desired width size */
+  background-color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Lekton", sans-serif;
+  /* background-image: url("/assets/test.gif ");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+ 
+}
+
+body.version-heeseung {
+  --main-font: "Lekton", sans-serif;
+  --font-size: 25px;
+  --top-color:#000000;
+  --bottom-color:#000000;
+  --text-color: #000000;
+  --barcode-color:#000000;
+  --logo-color: #ffffff;
+  --decelis-card: url("/assets/heeseung-front-id.png");
+}
+body.version-jay {
+  --main-font: "Lekton", sans-serif;
+  --font-size: 25px;
+  --top-color:#000000;
+  --bottom-color:#000000;
+  --text-color: #000000;
+  --barcode-color:#000000;
+  --logo-color: #ffffff;
+  --decelis-card: url("/assets/jay-front-id.png");
+}
+body.version-jake {
+  --main-font: "Lekton", sans-serif;
+  --font-size: 25px;
+  --top-color:#000000;
+  --bottom-color:#000000;
+  --text-color: #000000;
+  --barcode-color:#000000;
+  --logo-color: #ffffff;
+  --decelis-card: url("/assets/jake-front-id.png");
+}
+body.version-sunghoon {
+  --main-font: "Lekton", sans-serif;
+  --font-size: 25px;
+  --top-color:#000000;
+  --bottom-color:#000000;
+  --text-color: #000000;
+  --barcode-color:#000000;
+  --logo-color: #ffffff;
+  --decelis-card: url("/assets/sunghoon-front-id.png");
+}
+body.version-sunoo {
+  --main-font: "Lekton", sans-serif;
+  --font-size: 25px;
+  --top-color:#000000;
+  --bottom-color:#000000;
+  --text-color: #000000;
+  --barcode-color:#000000;
+  --logo-color: #ffffff;
+  --decelis-card: url("/assets/sunoo-front-id.png");
+}
+body.version-ni-ki {
+  --main-font: "Lekton", sans-serif;
+  --font-size: 25px;
+  --top-color:#000000;
+  --bottom-color:#000000;
+  --text-color: #000000;
+  --barcode-color:#000000;
+  --logo-color: #ffffff;
+  --decelis-card: url("/assets/ni-ki-front-id.png");
+}
+body.version-enhypen {
+  --main-font: "Lekton", sans-serif;
+  --font-size: 25px;
+  --top-color:#000000;
+  --bottom-color:#000000;
+  --text-color: #000000;
+  --barcode-color:#000000;
+  --logo-color: #ffffff;
+  --decelis-card: url("/assets/enhypen-front-id.png");
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 630px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  min-height: 100vh;
+  padding: 20px 10px;
+}
+
+h1,
+h2 {
+  font-size: var(--font-size);
+}
+
+.hide {
+  opacity: 0;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-footer{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-decoration: none;
+}
+
+.credits{
+  font-size: 12px;
+  text-align: center;
+  text-transform: none;
+  background-color: #e5e5e5;
+  padding: 5px;
+  margin: 10px;
+}
+
+.footer a{
+  text-decoration: none;
+  font-family: 'Lekton', sans-serif;
+  color: #242424;
+}
+
+.made-by {
+  font-family:'Lekton', sans-serif;
+  text-transform: lowercase;
+}
+.made-by a {
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #da7e98;
+  color: #050505;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.made-by a:hover {
+  box-shadow: inset 150px 0 0 0 #da7e98;
+  color: white;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center; /* Center the card horizontally */
+  align-items: center;    /* Center the card vertically */
+  perspective: 1500px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.card {
+  width: 333px;
+  height: 520px;
+  transform-style: preserve-3d;
+  position: relative;
+  border-radius: 25px;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.05), 0px 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.8s cubic-bezier(0.55, -0.62, 0.27, 1.2);
+}
+.card.flip {
+  transform: rotateY(-180deg);
+}
+.card__front, .card__back {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--decelis-card);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card__back {
+  z-index: 99;
+  border-radius: 25px;
+  transform: rotateY(180deg);
+  background-color: var(--bottom-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  display: block;
+}
+
+.left {
+  float: left;
+  width: 60px;
+  height: 400px;
+  padding: 10px;
+  background-color: var(--top-color);
+  color: white;
+  font-size: 30px;
+  border-radius: 0px 20px 20px 0px;
+  writing-mode: vertical-rl;
+  padding-top: 30px;
+  padding-right: 12px;
+  transform: rotate(-180deg);
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Lekton", sans-serif;
+}
+.left :nth-child(2) {
+  margin-left: 24px;
+}
+.left :nth-child(3) {
+  justify-self: right;
+}
+
+.right {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 23px;
+  z-index: 1;
+}
+
+/*-- INPUT ELEMENTS -----*/
+.main-image {
+  background: var(--bottom-color);
+  width: 128.1px;
+  height: 168px;
+  border-radius: 110px;
+  margin-top: 63px;
+  margin-left: 2px;
+}
+
+.your-face {
+  display: block;
+  background: var(--logo-color);
+  cursor: pointer;
+  position: relative;
+  max-height: 300px;
+  overflow: hidden;
+  height: 100%;
+  border-radius: 11.5px;
+}
+.your-face #imager {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 5;
+  position: relative;
+  visibility: hidden;
+}
+.your-face .image-persuader {
+  font-size: 20px;
+  font-family: var(--main-font);
+  position: absolute;
+  color: var(--top-color);
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.your-face .input-file {
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  bottom: 2px;
+  transform: translateX(-50%);
+  padding: 8px;
+  z-index: 11;
+  background: white;
+}
+.your-face .input-file:not(:focus-visible) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 1px;
+}
+.your-face .input-file:not(:focus) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 1px;
+}
+.your-face .input-file:focus-visible {
+  outline: 2px solid #242424;
+  outline-offset: -4px;
+}
+
+.form {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px ;
+}
+
+.loading{
+  margin: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.form .main-image {
+  justify-content: right;
+  align-items: right;
+}
+.form label span {
+  display: block;
+  font-family: "Lekton", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--text-color);
+  margin-bottom: -4px;
+}
+.form input {
+  font-family: var(--main-font);
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  display: block;
+  color: #242424;
+  height: 32px;
+  overflow: visible;
+  width: 100%;
+}
+.form input:focus {
+  outline: none;
+}
+.form input:focus::placeholder {
+  opacity: 0;
+}
+.form input::placeholder {
+  color: #242424;
+  transition: opacity 0.2s ease;
+}
+.form input::placeholder.hide {
+  opacity: 0;
+}
+.form .color-code {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.form .color-code input[type=text] {
+  width: 90px;
+}
+.form .color-code input[type=color] {
+  -webkit-appearance: none;
+  margin-top: 4px;
+  width: 16px;
+  height: 16px;
+}
+.form .color-code input[type=color]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+.form .color-code input[type=color]::-webkit-color-swatch {
+  border: none;
+  border-radius: 4px;
+}
+.form .color-code input[type=color]:focus-visible::-webkit-color-swatch {
+  outline: 2px solid #242424;
+  outline-offset: 2px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.barcode {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+}
+.barcode path {
+  fill: var(--barcode-color);
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.radio-group label {
+  font-family:  "Lekton", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 24px;
+}
+.radio-group label input[type=radio] {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  outline-offset: 4px;
+}
+.radio-group label .circle {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: #e5e5e5;
+  display: block;
+  position: absolute;
+  left: 0;
+}
+.radio-group label .text::after {
+  display: block;
+  content: attr(title);
+  font-weight: bold;
+  height: 1px;
+  color: transparent;
+  overflow: hidden;
+  visibility: hidden;
+  padding-bottom: 2px;
+}
+.radio-group label input[type=radio]:checked ~ span.version-jungwon {
+  background-color: #d9b564;
+}
+.radio-group label input[type=radio]:checked ~ span.version-heeseung {
+  background-color: #9e230f;
+}
+.radio-group label input[type=radio]:checked ~ span.version-jay {
+  background-color: #5e712a;
+}
+.radio-group label input[type=radio]:checked ~ span.version-jake {
+  background-color: #9b490a;
+}
+.radio-group label input[type=radio]:checked ~ span.version-sunghoon {
+  background-color: #2c4f6b;
+}
+.radio-group label input[type=radio]:checked ~ span.version-sunoo {
+  background-color: #ab5473;
+}
+.radio-group label input[type=radio]:checked ~ span.version-ni-ki {
+  background-color: #661f5f;
+}
+.radio-group label input[type=radio]:checked ~ span.version-enhypen {
+  background-color: #454545;
+}
+.radio-group label input[type=radio]:checked ~ .text {
+  font-weight: bold;
+}
+.radio-group label input[type=radio]:focus-visible ~ span.circle {
+  outline: 2px solid #242424;
+  outline-offset: 2px;
+}
+
+.btns-wrap{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.btn {
+  font-family:'Lekton', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 100px;
+  align-self: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:focus-visible {
+  outline: 2px solid #242424;
+  outline-offset: 2px;
+}
+.btn--primary {
+  color: white;
+  background-color: #242424;
+}
+.btn--primary:hover, .btn--primary:focus {
+  background-color: #0f0e0e;
+}
+.btn--secondary {
+  background-color: transparent;
+}
+.btn--secondary:hover, .btn--secondary:focus {
+  background-color: #e5e5e5;
+}
+
+@media only screen and (max-width: 670px) and (min-width: 381px) {
+  .scale {
+    transform: scale(0.9);
+  }
+  .btns-wrap{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .scale {
+    transform: scale(0.8);
+  }
+  .btns-wrap{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
+
+.input-one input {
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-one input:first-child {
+  font-size: 40px;
+  font-family: 'Lekton', sans-serif;
+  width: 68%; /* First input takes 70% */
+}
+
+.input-one input:last-child {
+  font-size: 12px;
+  font-family: 'Lekton Regular', sans-serif;
+  width: 30%;
+}
+
+.input-two {
+  display: flex;
+  margin-top: 10px;
+  gap: 5px; /* Add some spacing between the inputs */
+}
+
+.input-two input:first-child {
+  width: 68%; /* First input takes 70% */
+}
+
+.input-two input:last-child {
+  width: 30%;
+}
+
+.input-three{
+  display: flex;
+  margin-top: 3px;
+}
+
+/* .input-three input:first-child {
+  width: 70%;
+}
+.input-three input:last-child {
+  width: 30%;
+} */
+
+.input-three :nth-child(1) {
+  width: 30%;
+}
+.input-three :nth-child(2) {
+  width: 38.5%;
+  margin-left: 14.3px;
+}
+.input-three :nth-child(3) {
+  width: 31.5%;
+}
+
+.input-four{
+  display: flex;
+  margin-top: 4px;
+}
+
+.form_label{
+  font-size: 12px;
+  font-family: 'Lekton Regular', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: -2px;
+}
