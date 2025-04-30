@@ -146,7 +146,6 @@ h2 {
   text-transform: none;
   background-color: #e5e5e5;
   padding: 5px;
-  margin: 10px;
 }
 
 .footer a{
@@ -258,7 +257,7 @@ h2 {
 .main-image {
   background: var(--bottom-color);
   width: 128.1px;
-  height: 168px;
+  height: 168.2px;
   border-radius: 110px;
   margin-top: 63px;
   margin-left: 2px;
@@ -328,7 +327,7 @@ h2 {
   z-index: 2;
   display: flex;
   flex-direction: column;
-  margin-top: 35px ;
+  margin-top: 30px ;
 }
 
 .loading{
@@ -339,6 +338,7 @@ h2 {
   align-items: center;
   gap: 10px;
   text-align: center;
+  height:340px;
 }
 
 .form .main-image {
@@ -537,6 +537,7 @@ input::-webkit-inner-spin-button {
 @media only screen and (max-width: 670px) and (min-width: 381px) {
   .scale {
     transform: scale(0.9);
+    margin-bottom: -50px;
   }
   .btns-wrap{
     flex-direction: column;
@@ -549,17 +550,19 @@ input::-webkit-inner-spin-button {
     flex-direction: column;
     text-align: center;
     gap: 10px;
+    max-width: 500px;  
   }
 }
 @media only screen and (max-width: 380px) {
   .scale {
     transform: scale(0.8);
+    margin-bottom: -80px;
   }
   .btns-wrap{
     flex-direction: column;
     gap: 20px;
   }
-  .footer{
+  .main-footer{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -571,24 +574,23 @@ input::-webkit-inner-spin-button {
 
 .input-one input {
   flex-direction: column;
-  gap: 5px;
 }
 
 .input-one input:first-child {
   font-size: 40px;
   font-family: 'Lekton', sans-serif;
-  width: 68%; /* First input takes 70% */
+  margin-bottom: -8px
 }
 
 .input-one input:last-child {
   font-size: 12px;
   font-family: 'Lekton Regular', sans-serif;
-  width: 30%;
+  margin-top: 3px;
 }
 
 .input-two {
   display: flex;
-  margin-top: 10px;
+  margin-top: 4px;
   gap: 5px; /* Add some spacing between the inputs */
 }
 
