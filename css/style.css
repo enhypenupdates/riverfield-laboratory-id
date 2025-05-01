@@ -469,28 +469,28 @@ input::-webkit-inner-spin-button {
   padding-bottom: 2px;
 }
 .radio-group label input[type=radio]:checked ~ span.version-jungwon {
-  background-color: #d9b564;
+  background-color: #ffffff;
 }
 .radio-group label input[type=radio]:checked ~ span.version-heeseung {
-  background-color: #9e230f;
+  background-color: #ffffff;
 }
 .radio-group label input[type=radio]:checked ~ span.version-jay {
-  background-color: #5e712a;
+  background-color: #ffffff;
 }
 .radio-group label input[type=radio]:checked ~ span.version-jake {
-  background-color: #9b490a;
+  background-color: #ffffff;
 }
 .radio-group label input[type=radio]:checked ~ span.version-sunghoon {
-  background-color: #2c4f6b;
+  background-color: #ffffff;
 }
 .radio-group label input[type=radio]:checked ~ span.version-sunoo {
-  background-color: #ab5473;
+  background-color: #ffffff;
 }
 .radio-group label input[type=radio]:checked ~ span.version-ni-ki {
-  background-color: #661f5f;
+  background-color: #ffffff;
 }
 .radio-group label input[type=radio]:checked ~ span.version-enhypen {
-  background-color: #454545;
+  background-color: #ffffff;
 }
 .radio-group label input[type=radio]:checked ~ .text {
   font-weight: bold;
@@ -525,16 +525,16 @@ input::-webkit-inner-spin-button {
 }
 .btn--primary {
   color: white;
-  background-color: #242424;
+  background-color: #8e1600;
 }
 .btn--primary:hover, .btn--primary:focus {
-  background-color: #0f0e0e;
+  background-color: #82111d;
 }
 .btn--secondary {
-  background-color: transparent;
+  background-color: #82111d;
 }
 .btn--secondary:hover, .btn--secondary:focus {
-  background-color: #e5e5e5;
+  background-color: #8e1600;
 }
 
 @media only screen and (max-width: 670px) and (min-width: 381px) {
