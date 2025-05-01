@@ -124,7 +124,7 @@ h2 {
 }
 
 .hide {
-  opacity: 0;
+  z
 }
 
 .footer{
@@ -337,7 +337,8 @@ h2 {
   width: 100%;
   position: absolute;
   top: 0;
-  background-color: transparent;
+  background-color: #ff0000;
+  opacity: 50;
   display: flex;
   justify-content: center;
   align-items: center;
