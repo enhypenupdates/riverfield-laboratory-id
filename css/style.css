@@ -19,7 +19,7 @@ body {
   --font-size: 25px;
   --top-color:#000000;
   --bottom-color:#000000;
-  --text-color: #000000;
+  --text-color: #ffffff;
   --barcode-color:#000000;
   --logo-color: #ffffff;
   --decelis-card: url("/assets/jungwon-front-id.png");
@@ -38,7 +38,7 @@ body.version-heeseung {
   --font-size: 25px;
   --top-color:#000000;
   --bottom-color:#000000;
-  --text-color: #000000;
+  --text-color: #ffffff;
   --barcode-color:#000000;
   --logo-color: #ffffff;
   --decelis-card: url("/assets/heeseung-front-id.png");
@@ -48,7 +48,7 @@ body.version-jay {
   --font-size: 25px;
   --top-color:#000000;
   --bottom-color:#000000;
-  --text-color: #000000;
+  --text-color: #ffffff;
   --barcode-color:#000000;
   --logo-color: #ffffff;
   --decelis-card: url("/assets/jay-front-id.png");
@@ -58,7 +58,7 @@ body.version-jake {
   --font-size: 25px;
   --top-color:#000000;
   --bottom-color:#000000;
-  --text-color: #000000;
+  --text-color: #ffffff;
   --barcode-color:#000000;
   --logo-color: #ffffff;
   --decelis-card: url("/assets/jake-front-id.png");
@@ -68,7 +68,7 @@ body.version-sunghoon {
   --font-size: 25px;
   --top-color:#000000;
   --bottom-color:#000000;
-  --text-color: #000000;
+  --text-color: #ffffff;
   --barcode-color:#000000;
   --logo-color: #ffffff;
   --decelis-card: url("/assets/sunghoon-front-id.png");
@@ -78,7 +78,7 @@ body.version-sunoo {
   --font-size: 25px;
   --top-color:#000000;
   --bottom-color:#000000;
-  --text-color: #000000;
+  --text-color: #ffffff;
   --barcode-color:#000000;
   --logo-color: #ffffff;
   --decelis-card: url("/assets/sunoo-front-id.png");
@@ -88,7 +88,7 @@ body.version-ni-ki {
   --font-size: 25px;
   --top-color:#000000;
   --bottom-color:#000000;
-  --text-color: #000000;
+  --text-color: #ffffff;
   --barcode-color:#000000;
   --logo-color: #ffffff;
   --decelis-card: url("/assets/ni-ki-front-id.png");
@@ -98,7 +98,7 @@ body.version-enhypen {
   --font-size: 25px;
   --top-color:#000000;
   --bottom-color:#000000;
-  --text-color: #000000;
+  --text-color: #ffffff;
   --barcode-color:#000000;
   --logo-color: #ffffff;
   --decelis-card: url("/assets/enhypen-front-id.png");
@@ -151,7 +151,7 @@ h2 {
 .footer a{
   text-decoration: none;
   font-family: 'Lekton', sans-serif;
-  color: #8e1600;
+  color: #ffffff;
 }
 
 .made-by {
