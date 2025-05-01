@@ -31,6 +31,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
 }
 
 body.version-heeseung {
@@ -115,7 +116,6 @@ body.version-enhypen {
   gap: 36px;
   min-height: 100vh;
   padding: 20px 10px;
-  position: relative;
 }
 
 h1,
@@ -332,15 +332,19 @@ h2 {
 }
 
 .loading{
-  height:100%;
-  max-height: 300px;
+  height: 100%;
   width: 100%;
   position: absolute;
-  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: 5;
+  background-image: url("/assets/Untitled design.gif ");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
 }
 
 .form .main-image {
