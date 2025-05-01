@@ -633,3 +633,7 @@ input::-webkit-inner-spin-button {
   flex-direction: column;
   gap: -2px;
 }
+
+.enha-name{
+  color: #ffffff;
+}
