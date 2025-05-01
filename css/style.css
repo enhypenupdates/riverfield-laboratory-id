@@ -463,7 +463,7 @@ input::-webkit-inner-spin-button {
   content: attr(title);
   font-weight: bold;
   height: 1px;
-  color: transparent;
+  color: #ffffff;
   overflow: hidden;
   visibility: hidden;
   padding-bottom: 2px;
@@ -528,10 +528,10 @@ input::-webkit-inner-spin-button {
   background-color: #8e1600;
 }
 .btn--primary:hover, .btn--primary:focus {
-  background-color: #82111d;
+  background-color: #ed0000;
 }
 .btn--secondary {
-  background-color: #82111d;
+  background-color: #ed0000;
 }
 .btn--secondary:hover, .btn--secondary:focus {
   background-color: #8e1600;
