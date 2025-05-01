@@ -193,3 +193,8 @@ var cleave = new Cleave('.regDate', {
     delimiter: '-',
     datePattern: ['Y', 'm', 'd']
 });
+var cleave = new Cleave('.expDate', {
+    date: true,
+    delimiter: '-',
+    datePattern: ['Y', 'm', 'd']
+});
