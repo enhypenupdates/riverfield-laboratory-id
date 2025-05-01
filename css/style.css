@@ -254,10 +254,10 @@ h2 {
   z-index: 1;
 }
 
-/*-- INPUT ELEMENTS -----*/
+/*-- INPUT ELEMENTS ----/
 .main-image {
   background: var(--bottom-color);
-  width: 129.7px;
+  width: 130px;
   height: 169px;
   border-radius: 110px;
   margin-top: 62.4px;
