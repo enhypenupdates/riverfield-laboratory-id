@@ -124,7 +124,7 @@ h2 {
 }
 
 .hide {
-  z
+  opacity: 0;
 }
 
 .footer{
@@ -333,12 +333,10 @@ h2 {
 
 .loading{
   height:100%;
-  max-height: 600px;
+  max-height: 100px;
   width: 100%;
   position: absolute;
   top: 0;
-  background-color: #ff0000;
-  background-color-opacity: 50;
   display: flex;
   justify-content: center;
   align-items: center;
