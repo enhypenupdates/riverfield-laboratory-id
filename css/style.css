@@ -528,16 +528,16 @@ input::-webkit-inner-spin-button {
 }
 .btn--primary {
   color: white;
-  background-color: #ed0000;
+  background-color: #00b800;
 }
 .btn--primary:hover, .btn--primary:focus {
-  background-color: #8e1600;
+  background-color: #11dd08;
 }
 .btn--secondary {
-  background-color: #8e1600;
+  background-color: #11dd08;
 }
 .btn--secondary:hover, .btn--secondary:focus {
-  background-color: #ed0000;
+  background-color: #00b800;
 }
 
 @media only screen and (max-width: 670px) and (min-width: 381px) {
